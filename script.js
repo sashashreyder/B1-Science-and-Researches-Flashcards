@@ -39,8 +39,20 @@ function renderCard(idx) {
       <p class="feedback" id="feedback"></p>
     </div>`;
 
+  document.getElementById('answerInput').focus();
   document.getElementById('submitBtn').addEventListener('click', checkAnswer);
   document.getElementById('nextBtn').addEventListener('click', nextCard);
+
+  // Mobile click handler for tooltips
+  if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
+    const qmark = document.querySelector('.qmark');
+    qmark.addEventListener('click', e => {
+      document.querySelectorAll('.qmark').forEach(t => {
+        if (t !== e.target) t.classList.remove('active');
+      });
+      qmark.classList.toggle('active');
+    });
+  }
 }
 
 /* ---------- CHECK ---------- */
@@ -100,6 +112,7 @@ container.addEventListener('keydown', e => {
 
 /* ---------- INIT ---------- */
 renderCard(current);
+
 
 
 
