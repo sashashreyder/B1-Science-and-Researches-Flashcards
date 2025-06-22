@@ -1,3 +1,16 @@
+const data = [
+  { word: 'Formula', prompt: 'The chemical ___ for water is H2O.', answer: 'Formula', hint: 'A mathematical rule or chemical symbols.' },
+  { word: 'Sample', prompt: 'The lab tested a soil ___ for pollution.', answer: 'Sample', hint: 'A small part representing the whole.' },
+  { word: 'To advance', prompt: 'Technology ___ rapidly in the 21st century.', answer: 'To advance', hint: 'To move forward or improve.' },
+  { word: 'Practice', prompt: 'In ___, this method works well.', answer: 'Practice', hint: 'The actual application of an idea (vs. theory).' },
+  { word: 'Method', prompt: 'The scientific ___ involves observation and experimentation.', answer: 'Method', hint: 'A systematic way of doing something.' },
+  { word: 'Theory', prompt: 'Darwin’s ___ of evolution changed biology.', answer: 'Theory', hint: 'A well-substantiated explanation of phenomena.' },
+  { word: 'Scientifically', prompt: 'The theory was ___ proven.', answer: 'Scientifically', hint: 'In a way related to science.' },
+  { word: 'Matter', prompt: 'Scientists study the properties of ___.', answer: 'Matter', hint: 'Anything that has mass and takes up space.' },
+  { word: 'To measure', prompt: '___ the liquid carefully before mixing.', answer: 'To measure', hint: 'To determine size, amount, or degree.' },
+  { word: 'Phenomenon', prompt: 'Lightning is a natural ___.', answer: 'Phenomenon', hint: 'An observable event or fact.' }
+];
+
 let current = 0;
 let score   = 0;
 
@@ -95,6 +108,7 @@ container.addEventListener('keydown', e => {
 
 /* ---------- INIT ---------- */
 renderCard(current);
+
 
 
 
