@@ -1,7 +1,7 @@
 const data = [
   { word: 'Formula', prompt: 'The chemical ___ for water is H2O.', answer: 'Formula', hint: 'A mathematical rule or chemical symbols.' },
   { word: 'Sample', prompt: 'The lab tested a soil ___ for pollution.', answer: 'Sample', hint: 'A small part representing the whole.' },
-  { word: 'advance', prompt: 'Technology ___ rapidly in the 21st century.', answer: 'advance', hint: 'To move forward or improve.' },
+  { word: 'advance', prompt: 'Technology ___ rapidly in the 21st century.', answer: 'advances', hint: 'To move forward or improve.' },
   { word: 'Practice', prompt: 'In ___, this method works well.', answer: 'Practice', hint: 'The actual application of an idea (vs. theory).' },
   { word: 'Method', prompt: 'The scientific ___ involves observation and experimentation.', answer: 'Method', hint: 'A systematic way of doing something.' },
   { word: 'Theory', prompt: 'Darwin’s ___ of evolution changed biology.', answer: 'Theory', hint: 'A well-substantiated explanation of phenomena.' },
